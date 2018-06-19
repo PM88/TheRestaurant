@@ -1,0 +1,12 @@
+﻿@model TheRestaurant.Models.Ingredient
+
+@{
+    ViewBag.Title = Model.Name;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Name</h2>
+<ul>
+    <li>Ingredient unit: @Model.IngredientUnit.Name</li>
+    <li>Number in stock: @Model.NumberInStock</li>
+</ul>
